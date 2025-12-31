@@ -10,7 +10,7 @@ def extract_bl(filename):
         last_part = last_part.rsplit('.', 1)[0]
     return last_part
 
-st.title("XLSX Files Consolidator")
+st.title("RAFT JSON Converter")
 
 uploaded_files = st.file_uploader("Choose XLSX files", accept_multiple_files=True, type="xlsx")
 
@@ -73,4 +73,5 @@ if uploaded_files:
     else:
         st.warning("No data found in uploaded files.")
 else:
+
     st.info("Please upload one or more XLSX files.")
